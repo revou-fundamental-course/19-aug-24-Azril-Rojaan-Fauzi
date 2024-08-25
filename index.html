@@ -2,71 +2,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>My Website</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <nav>
     <header>
-      <div class="logo-icon"></div>
+      <div class="logo-icon"><img src="image/World.png" alt="png" class="logo-icon-img"></div>
     </header>
     <section class="nav-container">
       <a href="#" class="nav-item">Home</a>
-      <a href="#our-profile" class="nav-item">Our Profile</a>
-      <a href="#" class="nav-item">Message Us</a>
+      <a href="#my-profile" class="nav-item">My Profile</a>
+      <a href="#message" class="nav-item">Message Us</a>
     </section>
   </nav>
-  <hr>
+  
 
   <main>
     <article>
+      <div class="header-main">
       <header>
-        <h1>welcome user, to our webiste</h1>
+        <h1>Welcome user, to our webiste</h1>
       </header>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </div>
       <div class="banner-img"></div>
     </article>
     <hr>
-    <section id="our-profile">
+
+
+    <section id="my-profile">
       <div class="profile-container">
       <header>
-        <h1>Our profile</h1>
+        <h1 class="profile-head">My profile</h1>
       </header>
 
       <section class="main-profile">
           <div class="profile-item">
             <div class="profile-img"></div>
-            <h2>software enginer</h2>
+            <h2>Azril Rojaan Fauzi</h2>
           </div>
 
           <div class="profile-item">
             <div class="profile-img"></div>
-            <h2>software enginer</h2>
+            <h2>Teknik Informatika</h2>
           </div>
 
           <div class="profile-item">
             <div class="profile-img"></div>
-            <h2>software enginer</h2>
+            <h2>Universitas Muhammadiyah Bandung</h2>
           </div>
         </div>  
       </section>
     </section>
-
     <hr>
 
-    <section>
+    <section id="message" class="message">
       <header>
-        <h1>Message Us</h1>
+        <h1 class="message-item">Message Us</h1>
       </header>
+      <div class="message-main">
       <form>
-        
+        <div class="main-group">
+        <div class="form-group">
+          <label for="nama">Nama </label>
+          <input type="text" id="nama" name="nama" placeholder="Nama" class="js-input-nama">
+      </div>
+      <div class="form-group">
+          <label for="tanggal-lahir">Tanggal Lahir </label>
+          <input type="date" id="tanggal-lahir" name="tanggal-lahir" class="js-input-tanggal" >
+      </div>
+      <div class="form-group">
+          <label>Jenis Kelamin </label>
+              <label><input type="radio" name="gender" value="Laki-Laki"> Laki-Laki</label>
+              <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+      </div>
+      <div class="form-group">
+          <label for="pesan">Pesan </label>
+          <textarea id="pesan" name="pesan" placeholder="Pesan" class="js-input-pesan"></textarea>
+      </div>
       </form>
+    </div>
+      <form class="second-form">
+        <div class="second-group-form js-second-group-form">
+          <p>Current Time : Fri Jun 17 2022</p>
+          <p> </p>
+          <p>Nama :</p>
+          <p>Tanggal lahir :</p>
+          <p>Jenis Kelamin :</p>
+          <p>Pesan :</p>
+        </div>
+      </form>
+    </div>
     </section>
+    <div>
+      <button class="submit-button" onclick="submit()">Submit</button>
+  </div>
   </main>
 
     <hr>
   <footer>
     Made by @Azril
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

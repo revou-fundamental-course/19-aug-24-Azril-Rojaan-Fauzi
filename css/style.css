@@ -1,54 +1,156 @@
 /* ini css */
+html{
+  scroll-behavior: smooth;
+  font-family: arial;
+}
+/* Navbar */
 .logo-icon{
   height: 48px;
   width: 48px;
-  border: 1px solid;
+  padding-top: 6px;
+  padding-left: 50px;
+  padding-bottom: 10px;
 }
+.logo-icon-img{
+  height: 48px;
+  width: 48px;
+  border-radius:24px ;
+}
+
 nav{
+  position: sticky;
+  top: 0;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-right: 50px;
+  padding-bottom: 0;
 }
 
 .nav-container{
   display: flex;
+  justify-content: space-around;
+  width: 360px;
 }
 
 .nav-item{
   border: 1px solid;
   color: black;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
-  padding: 8px;
-  border-radius: 8px;
+  padding: 7px 15px;
+  border-radius: 7px;
+  transition: 0.5s;
+}
+.nav-item:hover{
+  background-color: black;
+  color: white;
+}
+/* Navbar end */
+
+/* Gambar slide */
+.header-main{
+  margin-top: 10px;
+  height: 100px;
+  padding-left: 80px;
 }
 .banner-img{
   border: 1px solid;
-  height: 300px;
+  height: 400px;
 }
+/* Gambar slide end */
+
+/* Profile */
 .main-profile{
   display: flex;
   justify-content: space-around;
 }
 .profile-item{
   text-align:  -webkit-center;
+  width: 200px;
 }
 .profile-img{
   border: 1px solid;
   background-color: black;
-  height: 50px;
-  border-radius: 50%;
-  width: 50px;
+  height: 100px;
+  width: 100px;
 }
-
-footer{
-  text-align: center;
-}
-
 .profile-container{
   display: flex;
   flex-direction: column;
   text-align: center;
 }
+.profile-head{
+  padding-bottom: 30px;
+}
+/* Profile end */
+
+/* Message */
+.message-item{
+  padding-left: 90px;
+}
+.message-main{
+  padding-left: 90px;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-group{
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.form-group label {
+  width: 120px;
+  margin-right: 10px;
+}
+.form-group input, .form-group textarea, .form-group select {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-group textarea {
+  resize: none; 
+  height: 100px;
+}
+
+.form-group button{
+  margin-left: 40%;
+}
+.submit-button{
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 5px 60px;
+  cursor: pointer;
+  margin-left: 20%;
+}
+
+.second-form{
+  margin-left: 13%;
+  border: 1px solid;
+  width: 40%;
+  height: 250px;
+}
+
+.second-group-form{
+  margin-left: 30px;
+  margin-top: 30px;
+}
+/* Message end */
+
+/* Footer */
+footer{
+  text-align: center;
+}
+/* Footer end */
+
+
