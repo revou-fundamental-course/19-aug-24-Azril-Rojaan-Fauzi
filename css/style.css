@@ -131,7 +131,14 @@ nav{
   border-radius: 3px;
   padding: 5px 60px;
   cursor: pointer;
-  margin-left: 20%;
+  margin-left: 10%;
+}
+.delete-button{
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 5px 60px;
+  cursor: pointer;
+  margin-left: 8%;
 }
 
 .second-form{
