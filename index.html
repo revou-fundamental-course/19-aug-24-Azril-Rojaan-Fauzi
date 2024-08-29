@@ -8,7 +8,7 @@
 <body>
   <nav>
     <header>
-      <div class="logo-icon"><img src="image/World.png" alt="png" class="logo-icon-img"></div>
+      <div class="logo-icon"><img src="image/icon.jpg" alt="png" class="logo-icon-img"></div>
     </header>
     <section class="nav-container">
       <a href="#" class="nav-item">Home</a>
@@ -22,14 +22,20 @@
     <article>
       <div class="header-main">
       <header>
-        <h1>Hi <span class="name">....</span> ,Welcome to our webiste</h1>
+        <h1>Hi <span class="name">....</span> ,Welcome to my website</h1>
       </header>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <p>Ini adalah webiste pertama saya</p>
       </div>
-      <div class="banner-img"></div>
+      <div class="banner-img">
+        <img src="image/Banner 1.png" alt="png" class="banner-item">
+      </div>
+      <div class="banner-img">
+        <img src="image/Banner 2.png" alt="png" class="banner-item">
+      </div>
+      <div class="banner-img">
+        <img src="image/Banner 3.png" alt="png" class="banner-item">
+      </div>
     </article>
-    <hr>
-
 
     <section id="my-profile">
       <div class="profile-container">
@@ -39,23 +45,22 @@
 
       <section class="main-profile">
           <div class="profile-item">
-            <div class="profile-img"></div>
+            <div class="profile-img"><img src="image/Profile 1.png" alt=""></div>
             <h2>Azril Rojaan Fauzi</h2>
           </div>
 
           <div class="profile-item">
-            <div class="profile-img"></div>
+            <div class="profile-img"><img src="image/Profile 2.png" alt=""></div>
             <h2>Teknik Informatika</h2>
           </div>
 
           <div class="profile-item">
-            <div class="profile-img"></div>
+            <div class="profile-img"><img src="image/Profile 3.png" alt=""></div>
             <h2>Universitas Muhammadiyah Bandung</h2>
           </div>
         </div>  
       </section>
     </section>
-    <hr>
 
     <section id="message" class="message">
       <header>
@@ -70,7 +75,7 @@
       </div>
       <div class="form-group">
           <label for="tanggal-lahir">Tanggal Lahir </label>
-          <input type="date" id="tanggal-lahir" name="tanggal-lahir" class="js-input-tanggal" >
+          <input type="date" id="tanggal-lahir" name="tanggal-lahir" class="js-input-tanggal input-tanggal" >
       </div>
       <div class="form-group">
           <label>Jenis Kelamin </label>
@@ -85,8 +90,6 @@
     </div>
       <form class="second-form">
         <div class="second-group-form js-second-group-form">
-          <p>Current Time :</p>
-          <p> </p>
           <p>Nama :</p>
           <p>Tanggal lahir :</p>
           <p>Jenis Kelamin :</p>
@@ -95,13 +98,15 @@
       </form>
     </div>
     </section>
-      <button class="submit-button" onclick="submit()">Submit</button>
+    <div class="button-group">
+      <button class="submit-button" onclick="submitButton()">Submit</button>
       <button class="delete-button" onclick="deleteButton()">Delete</button>
+      <button class="clear-button" onclick="clearButton()">Clear</button>
+    </div>
   </main>
 
-    <hr>
   <footer>
-    Made by @Azril
+    Made by @Azril Rojaan Fauzi
   </footer>
 
   <script src="js/script.js"></script>

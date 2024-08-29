@@ -1,5 +1,7 @@
 // ini javascript
-function submit(){
+
+// submit
+function submitButton(){
 const namaElement = document.querySelector('.js-input-nama');
 const namaValue = namaElement.value;
 
@@ -16,12 +18,9 @@ for (i = 0; i < genderElement.length; i++) {
       genderValue = genderElement[i].value;
 }
 
-const date = new Date();
 document.querySelector('.second-form').innerHTML = `
   <form class="second-form">
         <div class="second-group-form js-second-group-form">
-          <p>Current Time : ${date}</p>
-          <p> </p>
           <p>Nama : ${namaValue}</p>
           <p>Tanggal lahir : ${tanggalValue}</p>
           <p>Jenis Kelamin : ${genderValue}</p>
@@ -30,7 +29,9 @@ document.querySelector('.second-form').innerHTML = `
       </form>
 `
 }
+// submit end
 
+// delete
 function deleteButton(){
   document.querySelector('.main-form').innerHTML = `
     <form class="main-form">
@@ -55,9 +56,51 @@ function deleteButton(){
       </form>
   `
 }
+// delete end
 
+// clear
+function clearButton(){
+  document.querySelector('.second-form').innerHTML = `
+  <form class="second-form">
+        <div class="second-group-form js-second-group-form">
+          <p>Nama : </p>
+          <p>Tanggal lahir : </p>
+          <p>Jenis Kelamin : </p>
+          <p>Pesan : </p>
+        </div>
+      </form>
+`
+
+}
+// clear end
+
+// prompt
 function replaceName(){
   let name = prompt('Masukkan nama anda :','')
   document.querySelector('.name').innerHTML=name;
 }
 replaceName();
+// prompt end
+
+// Banner slide
+var slideIndex = 1;
+showDivs(slideIndex)
+
+function plusDivs(n){
+  showDivs((slideIndex += n))
+}
+
+function showDivs(n){
+  var i;
+  var x = document.getElementsByClassName('banner-img');
+  if(n > x.length){slideIndex = 1}
+  if(n < 1){slideIndex = x.length};
+  for (i = 0; i < x.length; i++){
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+setInterval(() => {
+  plusDivs(1)
+}, 2000);
